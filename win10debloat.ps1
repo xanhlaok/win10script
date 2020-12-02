@@ -34,7 +34,7 @@ $tweaks = @(
 	"Install7Zip",
 	"InstallNotepadplusplus",
 	"InstallIrfanview",
-	# "InstallVLC",
+	"InstallVLC",
 	"InstallAdobe",
 	"InstallBrave",
 	# "ChangeDefaultApps", # Removed due to issues with steam and resetting default apps
@@ -130,6 +130,7 @@ $tweaks = @(
 
 	### Explorer UI Tweaks ###
 	"ShowKnownExtensions",          # "HideKnownExtensions",
+	# "HideHiddenFiles",
 	"ShowHiddenFiles",
 	"HideSyncNotifications"         # "ShowSyncNotifications",
 	"HideRecentShortcuts",          # "ShowRecentShortcuts",
@@ -142,10 +143,10 @@ $tweaks = @(
 	# "HideDocumentsFromExplorer",  # "ShowDocumentsInExplorer",
 	# "HideDownloadsFromThisPC",      # "ShowDownloadsInThisPC",
 	# "HideDownloadsFromExplorer",  # "ShowDownloadsInExplorer",
-	"HideMusicFromThisPC",          # "ShowMusicInThisPC",
+	#"HideMusicFromThisPC",          # "ShowMusicInThisPC",
 	"HideMusicFromExplorer",      # "ShowMusicInExplorer",
-  "HidePicturesFromThisPC",       # "ShowPicturesInThisPC",
-  "HidePicturesFromExplorer",   # "ShowPicturesInExplorer",
+	"HidePicturesFromThisPC",       # "ShowPicturesInThisPC",
+	"HidePicturesFromExplorer",   # "ShowPicturesInExplorer",
 	"HideVideosFromThisPC",         # "ShowVideosInThisPC",
 	"HideVideosFromExplorer",     # "ShowVideosInExplorer",
 	"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
@@ -158,7 +159,7 @@ $tweaks = @(
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
-	# "DisableXboxFeatures",          # "EnableXboxFeatures",
+	"DisableXboxFeatures",          # "EnableXboxFeatures",
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
 	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
@@ -180,7 +181,7 @@ $tweaks = @(
 	# "EnableAudio",                # "DisableAudio",
 
 	### Unpinning ###
-	"UnpinStartMenuTiles",
+	#"UnpinStartMenuTiles",
 	#"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
