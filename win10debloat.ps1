@@ -95,7 +95,7 @@ $tweaks = @(
 	"DisableStorageSense",        # "EnableStorageSense",
 	"DisableDefragmentation",     # "EnableDefragmentation",
 	"DisableSuperfetch",          # "EnableSuperfetch",
-	"EnableIndexing",
+	"DisableIndexing" 						#"EnableIndexing",
 	"SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
 	"DisableHibernation",		# "EnableHibernation",          # 
 	"EnableSleepButton",		# "DisableSleepButton",         
@@ -123,15 +123,14 @@ $tweaks = @(
 	"DisableNewAppPrompt",          # "EnableNewAppPrompt",
 	# "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
 	# "SetVisualFXPerformance",     # "SetVisualFXAppearance",
-	# "AddENKeyboard",              # "RemoveENKeyboard",
+	"RemoveENKeyboard",			# "AddENKeyboard",              # "RemoveENKeyboard",
 	"EnableNumlock",             	# "DisableNumlock",
 	"EnableDarkMode",				# "DisableDarkMode",
 	"Stop-EdgePDF",
 
 	### Explorer UI Tweaks ###
 	"ShowKnownExtensions",          # "HideKnownExtensions",
-	# "HideHiddenFiles",
-	"ShowHiddenFiles",
+	"ShowHiddenFiles" # "HideHiddenFiles",
 	"HideSyncNotifications"         # "ShowSyncNotifications",
 	"HideRecentShortcuts",          # "ShowRecentShortcuts",
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
@@ -143,7 +142,7 @@ $tweaks = @(
 	# "HideDocumentsFromExplorer",  # "ShowDocumentsInExplorer",
 	# "HideDownloadsFromThisPC",      # "ShowDownloadsInThisPC",
 	# "HideDownloadsFromExplorer",  # "ShowDownloadsInExplorer",
-	#"HideMusicFromThisPC",          # "ShowMusicInThisPC",
+	"HideMusicFromThisPC",          # "ShowMusicInThisPC",
 	"HideMusicFromExplorer",      # "ShowMusicInExplorer",
 	"HidePicturesFromThisPC",       # "ShowPicturesInThisPC",
 	"HidePicturesFromExplorer",   # "ShowPicturesInExplorer",
@@ -155,22 +154,22 @@ $tweaks = @(
 	# "DisableThumbsDB",              # "EnableThumbsDB",
 
 	### Application Tweaks ###
-    # "EnableOneDrive",
+	"UninstallOneDrive",						# "DisableOneDrive"								# "EnableOneDrive",	
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
 	"DisableXboxFeatures",          # "EnableXboxFeatures",
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
-	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
-	"UninstallInternetExplorer",  # "InstallInternetExplorer",
-	"UninstallWorkFolders",       # "InstallWorkFolders",
-	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
+	"UninstallMediaPlayer", 				# "InstallMediaPlayer", 		# "UninstallMediaPlayer",
+	"UninstallInternetExplorer",  	# "InstallInternetExplorer",
+	"UninstallWorkFolders",       	# "InstallWorkFolders",
+	"InstallLinuxSubsystem",      	# "UninstallLinuxSubsystem",
 	# "InstallHyperV",              # "UninstallHyperV",
 	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
-	"InstallPDFPrinter"		# "UninstallPDFPrinter",
-	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
-	# "RemoveFaxPrinter",             # "AddFaxPrinter",
+	"InstallPDFPrinter"							# "UninstallPDFPrinter",
+	# "UninstallXPSPrinter",        # "InstallXPSPrinter",
+	# "RemoveFaxPrinter",           # "AddFaxPrinter",
 
 	### Server Specific Tweaks ###
 	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
@@ -181,7 +180,7 @@ $tweaks = @(
 	# "EnableAudio",                # "DisableAudio",
 
 	### Unpinning ###
-	#"UnpinStartMenuTiles",
+	"UnpinStartMenuTiles",
 	#"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
@@ -2005,7 +2004,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.BingSports" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingTranslator" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingWeather" | Remove-AppxPackage
-	#Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
 	#Get-AppxPackage "Microsoft.ConnectivityStore" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.GetHelp" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Getstarted" | Remove-AppxPackage
@@ -2027,7 +2026,7 @@ Function UninstallMsftBloat {
 	#Get-AppxPackage "microsoft.windowscommunicationsapps" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsFeedbackHub" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsMaps" | Remove-AppxPackage
-	#Get-AppxPackage "Microsoft.WindowsPhone" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.WindowsPhone" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Windows.Photos" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
